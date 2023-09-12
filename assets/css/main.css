@@ -1,0 +1,17 @@
+.hero-image-outer{
+    background-position: center;
+    overflow: hidden;
+    background-size: cover;
+    position: relative;
+}
+.hero-image{
+position: absolute;
+height: 35%;
+width: 100%;
+background: linear-gradient(transparent, black);
+bottom: -35%;
+transition: all ease 1s;
+}
+.hero-image-outer:hover .hero-image{
+    bottom: 0;
+}
