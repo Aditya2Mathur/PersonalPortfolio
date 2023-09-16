@@ -136,8 +136,8 @@
                 arrows: true,
                 adaptiveHeight: true,
                 cssEase: 'linear',
-                prevArrow: '<button class="slide-arrow prev-arrow"><i class="feather-arrow-left"></i></button>',
-                nextArrow: '<button class="slide-arrow next-arrow"><i class="feather-arrow-right"></i></button>'
+                prevArrow: '<button class="slide-arrow prev-arrow"><i class="fa-solid fa-arrow-left"></i></i></button>',
+                nextArrow: '<button class="slide-arrow next-arrow"><i class="fa-solid fa-arrow-right"></i></i></button>'
             });
 
             $('.testimonial-item-one').slick({
@@ -167,8 +167,8 @@
                 arrows: true,
                 cssEase: 'linear',
                 adaptiveHeight: true,
-                prevArrow: '<button class="slide-arrow prev-arrow"><i class="feather-arrow-left"></i></button>',
-                nextArrow: '<button class="slide-arrow next-arrow"><i class="feather-arrow-right"></i></button>',
+                prevArrow: '<button class="slide-arrow prev-arrow"><i class="fa-solid fa-arrow-left"></i></i></button>',
+                nextArrow: '<button class="slide-arrow next-arrow"><i class="fa-solid fa-arrow-right"></i></i></button>',
                 responsive: [{
                         breakpoint: 1124,
                         settings: {
@@ -204,8 +204,8 @@
                 arrows: true,
                 cssEase: 'linear',
                 adaptiveHeight: true,
-                prevArrow: '<button class="slide-arrow prev-arrow"><i class="feather-arrow-left"></i></button>',
-                nextArrow: '<button class="slide-arrow next-arrow"><i class="feather-arrow-right"></i></button>',
+                prevArrow: '<button class="slide-arrow prev-arrow"><i class="fa-solid fa-arrow-left"></i></i></button>',
+                nextArrow: '<button class="slide-arrow next-arrow"><i class="fa-solid fa-arrow-right"></i></i></button>',
                 responsive: [{
                         breakpoint: 1124,
                         settings: {

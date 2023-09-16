@@ -37,8 +37,8 @@
             let i = t.getAttribute("data-bs-target");
             if (!i || "#" === i) {
                 let e = t.getAttribute("href");
-                if (!e || !e.includes("#") && !e.startsWith(".")) return null;
-                e.includes("#") && !e.startsWith("#") && (e = "#" + e.split("#")[1]), i = e && "#" !== e ? e.trim() : null
+                if (!e || !e.includes("#") && !e.StartingsWith(".")) return null;
+                e.includes("#") && !e.StartingsWith("#") && (e = "#" + e.split("#")[1]), i = e && "#" !== e ? e.trim() : null
             }
             return i
         },
@@ -132,7 +132,7 @@
             mouseleave: "mouseout"
         },
         J = /^(mouseenter|mouseleave)/i,
-        ee = new Set(["click", "dblclick", "mouseup", "mousedown", "contextmenu", "mousewheel", "DOMMouseScroll", "mouseover", "mouseout", "mousemove", "selectstart", "selectend", "keydown", "keypress", "keyup", "orientationchange", "touchstart", "touchmove", "touchend", "touchcancel", "pointerdown", "pointermove", "pointerup", "pointerleave", "pointercancel", "gesturestart", "gesturechange", "gestureend", "focus", "blur", "change", "reset", "select", "submit", "focusin", "focusout", "load", "unload", "beforeunload", "resize", "move", "DOMContentLoaded", "readystatechange", "error", "abort", "scroll"]);
+        ee = new Set(["click", "dblclick", "mouseup", "mousedown", "contextmenu", "mousewheel", "DOMMouseScroll", "mouseover", "mouseout", "mousemove", "selectStarting", "selectend", "keydown", "keypress", "keyup", "orientationchange", "touchStarting", "touchmove", "touchend", "touchcancel", "pointerdown", "pointermove", "pointerup", "pointerleave", "pointercancel", "gestureStarting", "gesturechange", "gestureend", "focus", "blur", "change", "reset", "select", "submit", "focusin", "focusout", "load", "unload", "beforeunload", "resize", "move", "DOMContentLoaded", "readystatechange", "error", "abort", "scroll"]);
 
     function te(e, t) {
         return t && t + "::" + G++ || e.uidEvent || G++
@@ -201,7 +201,7 @@
             },
             off(r, a, e, t) {
                 if ("string" == typeof a && r) {
-                    const [i, s, n] = ne(a, e, t), o = n !== a, l = ie(r), c = a.startsWith(".");
+                    const [i, s, n] = ne(a, e, t), o = n !== a, l = ie(r), c = a.StartingsWith(".");
                     if (void 0 !== s) return l && l[n] ? void re(r, l, n, s, i ? e : null) : void 0;
                     c && Object.keys(l).forEach(e => {
                         {
@@ -365,7 +365,7 @@
             getDataAttributes(i) {
                 if (!i) return {};
                 const s = {};
-                return Object.keys(i.dataset).filter(e => e.startsWith("bs")).forEach(e => {
+                return Object.keys(i.dataset).filter(e => e.StartingsWith("bs")).forEach(e => {
                     let t = e.replace(/^bs/, "");
                     t = t.charAt(0).toLowerCase() + t.slice(1, t.length), s[t] = fe(i.dataset[e])
                 }), s
@@ -409,7 +409,7 @@
         };
     class g extends t {
         constructor(e, t) {
-            super(e), this._items = null, this._interval = null, this._activeElement = null, this._isPaused = !1, this._isSliding = !1, this.touchTimeout = null, this.touchStartX = 0, this.touchDeltaX = 0, this._config = this._getConfig(t), this._indicatorsElement = f.findOne(".carousel-indicators", this._element), this._touchSupported = "ontouchstart" in document.documentElement || 0 < navigator.maxTouchPoints, this._pointerEvent = Boolean(window.PointerEvent), this._addEventListeners()
+            super(e), this._items = null, this._interval = null, this._activeElement = null, this._isPaused = !1, this._isSliding = !1, this.touchTimeout = null, this.touchStartingX = 0, this.touchDeltaX = 0, this._config = this._getConfig(t), this._indicatorsElement = f.findOne(".carousel-indicators", this._element), this._touchSupported = "ontouchStarting" in document.documentElement || 0 < navigator.maxTouchPoints, this._pointerEvent = Boolean(window.PointerEvent), this._addEventListeners()
         }
         static get Default() {
             return me
@@ -458,17 +458,17 @@
         }
         _addTouchEventListeners() {
             const t = e => {
-                    !this._pointerEvent || "pen" !== e.pointerType && "touch" !== e.pointerType ? this._pointerEvent || (this.touchStartX = e.touches[0].clientX) : this.touchStartX = e.clientX
+                    !this._pointerEvent || "pen" !== e.pointerType && "touch" !== e.pointerType ? this._pointerEvent || (this.touchStartingX = e.touches[0].clientX) : this.touchStartingX = e.clientX
                 },
                 i = e => {
-                    this.touchDeltaX = e.touches && 1 < e.touches.length ? 0 : e.touches[0].clientX - this.touchStartX
+                    this.touchDeltaX = e.touches && 1 < e.touches.length ? 0 : e.touches[0].clientX - this.touchStartingX
                 },
                 s = e => {
-                    !this._pointerEvent || "pen" !== e.pointerType && "touch" !== e.pointerType || (this.touchDeltaX = e.clientX - this.touchStartX), this._handleSwipe(), "hover" === this._config.pause && (this.pause(), this.touchTimeout && clearTimeout(this.touchTimeout), this.touchTimeout = setTimeout(e => this.cycle(e), 500 + this._config.interval))
+                    !this._pointerEvent || "pen" !== e.pointerType && "touch" !== e.pointerType || (this.touchDeltaX = e.clientX - this.touchStartingX), this._handleSwipe(), "hover" === this._config.pause && (this.pause(), this.touchTimeout && clearTimeout(this.touchTimeout), this.touchTimeout = setTimeout(e => this.cycle(e), 500 + this._config.interval))
                 };
             f.find(".carousel-item img", this._element).forEach(e => {
-                b.on(e, "dragstart.bs.carousel", e => e.preventDefault())
-            }), this._pointerEvent ? (b.on(this._element, "pointerdown.bs.carousel", e => t(e)), b.on(this._element, "pointerup.bs.carousel", e => s(e)), this._element.classList.add("pointer-event")) : (b.on(this._element, "touchstart.bs.carousel", e => t(e)), b.on(this._element, "touchmove.bs.carousel", e => i(e)), b.on(this._element, "touchend.bs.carousel", e => s(e)))
+                b.on(e, "dragStarting.bs.carousel", e => e.preventDefault())
+            }), this._pointerEvent ? (b.on(this._element, "pointerdown.bs.carousel", e => t(e)), b.on(this._element, "pointerup.bs.carousel", e => s(e)), this._element.classList.add("pointer-event")) : (b.on(this._element, "touchStarting.bs.carousel", e => t(e)), b.on(this._element, "touchmove.bs.carousel", e => i(e)), b.on(this._element, "touchend.bs.carousel", e => s(e)))
         }
         _keydown(e) {
             var t;
@@ -515,7 +515,7 @@
                 r = this._getItemIndex(o),
                 a = Boolean(this._interval),
                 l = i === m,
-                c = l ? "carousel-item-start" : "carousel-item-end",
+                c = l ? "carousel-item-Starting" : "carousel-item-end",
                 h = l ? "carousel-item-next" : "carousel-item-prev",
                 d = this._orderToDirection(i);
             if (o && o.classList.contains("active")) this._isSliding = !1;
@@ -707,10 +707,10 @@
         D = "left",
         S = [k, L, x, D],
         we = S.reduce(function(e, t) {
-            return e.concat([t + "-start", t + "-end"])
+            return e.concat([t + "-Starting", t + "-end"])
         }, []),
         Ee = [].concat(S, ["auto"]).reduce(function(e, t) {
-            return e.concat([t, t + "-start", t + "-end"])
+            return e.concat([t, t + "-Starting", t + "-end"])
         }, []),
         Ae = ["beforeRead", "read", "afterRead", "beforeMain", "main", "afterMain", "beforeWrite", "write", "afterWrite"];
 
@@ -1016,12 +1016,12 @@
         })
     }
     var Ve = {
-        start: "end",
-        end: "start"
+        Starting: "end",
+        end: "Starting"
     };
 
     function Ke(e) {
-        return e.replace(/start|end/g, function(e) {
+        return e.replace(/Starting|end/g, function(e) {
             return Ve[e]
         })
     }
@@ -1129,7 +1129,7 @@
         if (null != a) {
             var l = "y" === a ? "height" : "width";
             switch (e) {
-                case "start":
+                case "Starting":
                     t[a] = t[a] - (i[l] / 2 - s[l] / 2);
                     break;
                 case "end":
@@ -1224,7 +1224,7 @@
                     }, []), l = d.rects.reference, c = d.rects.popper, h = new Map, _ = !0, b = a[0], v = 0; v < a.length; v++) {
                     var y = a[v],
                         w = I(y),
-                        E = "start" === et(y),
+                        E = "Starting" === et(y),
                         A = 0 <= [k, L].indexOf(w),
                         T = A ? "width" : "height",
                         O = N(d, {
@@ -1399,7 +1399,7 @@
                         x: 0,
                         y: 0
                     };
-                y && ((u || f) && (o = "y" === m ? "height" : "width", t = y[m], i = y[m] + p[c = "y" === m ? k : D], s = y[m] - p[a = "y" === m ? L : x], r = b ? -E[o] / 2 : 0, n = ("start" === _ ? w : E)[o], _ = "start" === _ ? -E[o] : -w[o], E = h.elements.arrow, E = b && E ? ke(E) : {
+                y && ((u || f) && (o = "y" === m ? "height" : "width", t = y[m], i = y[m] + p[c = "y" === m ? k : D], s = y[m] - p[a = "y" === m ? L : x], r = b ? -E[o] / 2 : 0, n = ("Starting" === _ ? w : E)[o], _ = "Starting" === _ ? -E[o] : -w[o], E = h.elements.arrow, E = b && E ? ke(E) : {
                     width: 0,
                     height: 0
                 }, c = (l = h.modifiersData["arrow#persistent"] ? h.modifiersData["arrow#persistent"].padding : {
@@ -1571,7 +1571,7 @@
             left: D,
             auto: "auto",
             basePlacements: S,
-            start: "start",
+            Starting: "Starting",
             end: "end",
             clippingParents: "clippingParents",
             viewport: "viewport",
@@ -1600,12 +1600,12 @@
             preventOverflow: lt
         });
     const gt = new RegExp("ArrowUp|ArrowDown|Escape"),
-        _t = s() ? "top-end" : "top-start",
-        bt = s() ? "top-start" : "top-end",
-        vt = s() ? "bottom-end" : "bottom-start",
-        yt = s() ? "bottom-start" : "bottom-end",
-        wt = s() ? "left-start" : "right-start",
-        Et = s() ? "right-start" : "left-start",
+        _t = s() ? "top-end" : "top-Starting",
+        bt = s() ? "top-Starting" : "top-end",
+        vt = s() ? "bottom-end" : "bottom-Starting",
+        yt = s() ? "bottom-Starting" : "bottom-end",
+        wt = s() ? "left-Starting" : "right-Starting",
+        Et = s() ? "right-Starting" : "left-Starting",
         At = {
             offset: [0, 2],
             boundary: "clippingParents",
@@ -1654,7 +1654,7 @@
                             s = i.modifiers.find(e => "applyStyles" === e.name && !1 === e.enabled);
                         this._popper = pt(e, this._menu, i), s && h.setDataAttribute(this._menu, "popper", "static")
                     }
-                    "ontouchstart" in document.documentElement && !t.closest(".navbar-nav") && [].concat(...document.body.children).forEach(e => b.on(e, "mouseover", z)), this._element.focus(), this._element.setAttribute("aria-expanded", !0), this._menu.classList.toggle("show"), this._element.classList.toggle("show"), b.trigger(this._element, "shown.bs.dropdown", e)
+                    "ontouchStarting" in document.documentElement && !t.closest(".navbar-nav") && [].concat(...document.body.children).forEach(e => b.on(e, "mouseover", z)), this._element.focus(), this._element.setAttribute("aria-expanded", !0), this._menu.classList.toggle("show"), this._element.classList.toggle("show"), b.trigger(this._element, "shown.bs.dropdown", e)
                 }
             }
         }
@@ -1676,7 +1676,7 @@
             })
         }
         _completeHide(e) {
-            b.trigger(this._element, "hide.bs.dropdown", e).defaultPrevented || ("ontouchstart" in document.documentElement && [].concat(...document.body.children).forEach(e => b.off(e, "mouseover", z)), this._popper && this._popper.destroy(), this._menu.classList.remove("show"), this._element.classList.remove("show"), this._element.setAttribute("aria-expanded", "false"), h.removeDataAttribute(this._menu, "popper"), b.trigger(this._element, "hidden.bs.dropdown", e))
+            b.trigger(this._element, "hide.bs.dropdown", e).defaultPrevented || ("ontouchStarting" in document.documentElement && [].concat(...document.body.children).forEach(e => b.off(e, "mouseover", z)), this._popper && this._popper.destroy(), this._menu.classList.remove("show"), this._element.classList.remove("show"), this._element.setAttribute("aria-expanded", "false"), h.removeDataAttribute(this._menu, "popper"), b.trigger(this._element, "hidden.bs.dropdown", e))
         }
         _getConfig(e) {
             if (e = { ...this.constructor.Default,
@@ -1691,7 +1691,7 @@
         _getPlacement() {
             const e = this._element.parentNode;
             if (e.classList.contains("dropend")) return wt;
-            if (e.classList.contains("dropstart")) return Et;
+            if (e.classList.contains("dropStarting")) return Et;
             var t = "end" === getComputedStyle(this._menu).getPropertyValue("--bs-position").trim();
             return e.classList.contains("dropup") ? t ? bt : _t : t ? yt : vt
         }
@@ -2067,7 +2067,7 @@
             return this.each(function() {
                 const e = j.getOrCreateInstance(this, t);
                 if ("string" == typeof t) {
-                    if (void 0 === e[t] || t.startsWith("_") || "constructor" === t) throw new TypeError(`No method named "${t}"`);
+                    if (void 0 === e[t] || t.StartingsWith("_") || "constructor" === t) throw new TypeError(`No method named "${t}"`);
                     e[t](this)
                 }
             })
@@ -2250,7 +2250,7 @@
                     this._addAttachmentClass(e);
                     const r = this._config["container"],
                         a = (le(n, this.constructor.DATA_KEY, this), this._element.ownerDocument.documentElement.contains(this.tip) || (r.appendChild(n), b.trigger(this._element, this.constructor.Event.INSERTED)), this._popper ? this._popper.update() : this._popper = pt(this._element, n, this._getPopperConfig(e)), n.classList.add("show"), "function" == typeof this._config.customClass ? this._config.customClass() : this._config.customClass);
-                    a && n.classList.add(...a.split(" ")), "ontouchstart" in document.documentElement && [].concat(...document.body.children).forEach(e => {
+                    a && n.classList.add(...a.split(" ")), "ontouchStarting" in document.documentElement && [].concat(...document.body.children).forEach(e => {
                         b.on(e, "mouseover", z)
                     });
                     e = this.tip.classList.contains("fade");
@@ -2265,7 +2265,7 @@
             if (this._popper) {
                 const t = this.getTipElement();
                 var e;
-                b.trigger(this._element, this.constructor.Event.HIDE).defaultPrevented || (t.classList.remove("show"), "ontouchstart" in document.documentElement && [].concat(...document.body.children).forEach(e => b.off(e, "mouseover", z)), this._activeTrigger.click = !1, this._activeTrigger.focus = !1, this._activeTrigger.hover = !1, e = this.tip.classList.contains("fade"), this._queueCallback(() => {
+                b.trigger(this._element, this.constructor.Event.HIDE).defaultPrevented || (t.classList.remove("show"), "ontouchStarting" in document.documentElement && [].concat(...document.body.children).forEach(e => b.off(e, "mouseover", z)), this._activeTrigger.click = !1, this._activeTrigger.focus = !1, this._activeTrigger.hover = !1, e = this.tip.classList.contains("fade"), this._queueCallback(() => {
                     this._isWithActiveTrigger() || ("show" !== this._hoverState && t.remove(), this._cleanTipClass(), this._element.removeAttribute("aria-describedby"), b.trigger(this._element, this.constructor.Event.HIDDEN), this._popper && (this._popper.destroy(), this._popper = null))
                 }, this.tip, e), this._hoverState = "")
             }
@@ -2293,7 +2293,7 @@
             return e = e || ("function" == typeof this._config.title ? this._config.title.call(this._element) : this._config.title)
         }
         updateAttachment(e) {
-            return "right" === e ? "end" : "left" === e ? "start" : e
+            return "right" === e ? "end" : "left" === e ? "Starting" : e
         }
         _initializeOnDelegatedTarget(e, t) {
             var i = this.constructor.DATA_KEY;

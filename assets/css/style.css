@@ -10627,7 +10627,7 @@ body.template-color-1 {
 
 .header-wrapper .header-left {
     flex-basis: 20%;
-    justify-content: flex-start;
+    justify-content: flex-Starting;
     display: flex;
 }
 
@@ -13738,7 +13738,7 @@ figcaption {
 
 .rn-content-wrapper .header-right {
     display: flex;
-    align-items: start;
+    align-items: Starting;
     flex-wrap: wrap;
 }
 
@@ -17232,7 +17232,7 @@ span.sr-only {
 
 @media only screen and (max-width: 1199px) {
     .sticky-home-wrapper .rn-skill-area .inner .skill-share-inner .skill-share {
-        justify-content: flex-start;
+        justify-content: flex-Starting;
     }
 }
 
@@ -17299,7 +17299,7 @@ span.sr-only {
 }
 
 .sticky-home-wrapper .rn-skill-area .inner .skill-share-inner.skill-share-inner-width .skill-share {
-    justify-content: flex-start;
+    justify-content: flex-Starting;
 }
 
 @media only screen and (max-width: 575px) {
@@ -17404,7 +17404,7 @@ span.sr-only {
 .rn-testimonial-carousel.carousel .carousel-indicators {
     top: 84%;
     left: 0;
-    justify-content: flex-start;
+    justify-content: flex-Starting;
     margin-left: 0;
 }
 
