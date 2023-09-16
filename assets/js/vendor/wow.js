@@ -11,7 +11,7 @@
     };
 
     function s(t) {
-        null == t && (t = {}), this.scrollCallback = e(this.scrollCallback, this), this.scrollHandler = e(this.scrollHandler, this), this.resetAnimation = e(this.resetAnimation, this), this.Starting = e(this.Starting, this), this.scrolled = !0, this.config = this.util().extend(t, this.defaults), null != t.scrollContainer && (this.config.scrollContainer = document.querySelector(t.scrollContainer)), this.animationNameCache = new n, this.wowEvent = this.util().createEvent(this.config.boxClass)
+        null == t && (t = {}), this.scrollCallback = e(this.scrollCallback, this), this.scrollHandler = e(this.scrollHandler, this), this.resetAnimation = e(this.resetAnimation, this), this.start = e(this.start, this), this.scrolled = !0, this.config = this.util().extend(t, this.defaults), null != t.scrollContainer && (this.config.scrollContainer = document.querySelector(t.scrollContainer)), this.animationNameCache = new n, this.wowEvent = this.util().createEvent(this.config.boxClass)
     }
 
     function l() {
@@ -64,8 +64,8 @@
         scrollContainer: null
     }, s.prototype.init = function() {
         var t;
-        return this.element = window.document.documentElement, "interactive" === (t = document.readyState) || "complete" === t ? this.Starting() : this.util().addEvent(document, "DOMContentLoaded", this.Starting), this.finished = []
-    }, s.prototype.Starting = function() {
+        return this.element = window.document.documentElement, "interactive" === (t = document.readyState) || "complete" === t ? this.start() : this.util().addEvent(document, "DOMContentLoaded", this.start), this.finished = []
+    }, s.prototype.start = function() {
         var o, t, e, n, r;
         if (this.stopped = !1, this.boxes = function() {
                 for (var t = this.element.querySelectorAll("." + this.config.boxClass), e = [], n = 0, i = t.length; n < i; n++) o = t[n], e.push(o);

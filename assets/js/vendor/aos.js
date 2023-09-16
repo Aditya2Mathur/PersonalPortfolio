@@ -387,7 +387,7 @@
             once: !1,
             mirror: !1,
             anchorPlacement: "top-bottom",
-            StartingEvent: "DOMContentLoaded",
+            startEvent: "DOMContentLoaded",
             animatedClassName: "aos-animate",
             initClassName: "aos-init",
             useClassNames: !1,
@@ -401,11 +401,11 @@
     }
     return {
         init: function(e) {
-            return S = ne(S, e), T = g(), S.disableMutationObserver || te() || (console.info('\n      aos: MutationObserver is not supported on this browser,\n      code mutations observing has been disabled.\n      You may have to call "refreshHard()" by yourself.\n    '), S.disableMutationObserver = !0), S.disableMutationObserver || oe("[data-aos]", z), A(S.disable) || E() ? C() : (document.querySelector("body").setAttribute("data-aos-easing", S.easing), document.querySelector("body").setAttribute("data-aos-duration", S.duration), document.querySelector("body").setAttribute("data-aos-delay", S.delay), -1 === ["DOMContentLoaded", "load"].indexOf(S.StartingEvent) ? document.addEventListener(S.StartingEvent, function() {
+            return S = ne(S, e), T = g(), S.disableMutationObserver || te() || (console.info('\n      aos: MutationObserver is not supported on this browser,\n      code mutations observing has been disabled.\n      You may have to call "refreshHard()" by yourself.\n    '), S.disableMutationObserver = !0), S.disableMutationObserver || oe("[data-aos]", z), A(S.disable) || E() ? C() : (document.querySelector("body").setAttribute("data-aos-easing", S.easing), document.querySelector("body").setAttribute("data-aos-duration", S.duration), document.querySelector("body").setAttribute("data-aos-delay", S.delay), -1 === ["DOMContentLoaded", "load"].indexOf(S.startEvent) ? document.addEventListener(S.startEvent, function() {
                 N(!0)
             }) : window.addEventListener("load", function() {
                 N(!0)
-            }), "DOMContentLoaded" === S.StartingEvent && -1 < ["complete", "interactive"].indexOf(document.readyState) && N(!0), window.addEventListener("resize", u(N, S.debounceDelay, !0)), window.addEventListener("orientationchange", u(N, S.debounceDelay, !0)), T)
+            }), "DOMContentLoaded" === S.startEvent && -1 < ["complete", "interactive"].indexOf(document.readyState) && N(!0), window.addEventListener("resize", u(N, S.debounceDelay, !0)), window.addEventListener("orientationchange", u(N, S.debounceDelay, !0)), T)
         },
         refresh: N,
         refreshHard: z

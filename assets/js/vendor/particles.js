@@ -287,7 +287,7 @@ var pJS = function(e, t) {
         }, v.fn.particlesEmpty = function() {
             v.particles.array = []
         }, v.fn.particlesRefresh = function() {
-            cancelRequestAnimFrame(v.fn.checkAnimFrame), cancelRequestAnimFrame(v.fn.drawAnimFrame), v.tmp.source_svg = void 0, v.tmp.img_obj = void 0, v.tmp.count_svg = 0, v.fn.particlesEmpty(), v.fn.canvasClear(), v.fn.vendors.Starting()
+            cancelRequestAnimFrame(v.fn.checkAnimFrame), cancelRequestAnimFrame(v.fn.drawAnimFrame), v.tmp.source_svg = void 0, v.tmp.img_obj = void 0, v.tmp.count_svg = 0, v.fn.particlesEmpty(), v.fn.canvasClear(), v.fn.vendors.start()
         }, v.fn.interact.linkParticles = function(e, t) {
             var a = e.x - t.x,
                 i = e.y - t.y,
@@ -402,9 +402,9 @@ var pJS = function(e, t) {
             "image" == v.particles.shape.type ? "svg" == v.tmp.img_type && null == v.tmp.source_svg ? v.tmp.checkAnimFrame = requestAnimFrame(check) : (cancelRequestAnimFrame(v.tmp.checkAnimFrame), v.tmp.img_error || (v.fn.vendors.init(), v.fn.vendors.draw())) : (v.fn.vendors.init(), v.fn.vendors.draw())
         }, v.fn.vendors.init = function() {
             v.fn.retinaInit(), v.fn.canvasInit(), v.fn.canvasSize(), v.fn.canvasPaint(), v.fn.particlesCreate(), v.fn.vendors.densityAutoParticles(), v.particles.line_linked.color_rgb_line = hexToRgb(v.particles.line_linked.color)
-        }, v.fn.vendors.Starting = function() {
+        }, v.fn.vendors.start = function() {
             isInArray("image", v.particles.shape.type) ? (v.tmp.img_type = v.particles.shape.image.src.substr(v.particles.shape.image.src.length - 3), v.fn.vendors.loadImg(v.tmp.img_type)) : v.fn.vendors.checkBeforeDraw()
-        }, v.fn.vendors.eventsListeners(), v.fn.vendors.Starting()
+        }, v.fn.vendors.eventsListeners(), v.fn.vendors.start()
     },
     Stats = (Object.deepExtend = function(e, t) {
         for (var a in t) t[a] && t[a].constructor && t[a].constructor === Object ? (e[a] = e[a] || {}, arguments.callee(e[a], t[a])) : e[a] = t[a];

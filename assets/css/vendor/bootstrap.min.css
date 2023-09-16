@@ -2646,7 +2646,7 @@ textarea.form-control-lg {
     display: block;
     width: 100%;
     padding: .375rem 2.25rem .375rem .75rem;
-    -moz-padding-Starting: calc(0.75rem - 3px);
+    -moz-padding-start: calc(0.75rem - 3px);
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
@@ -4225,7 +4225,7 @@ fieldset:disabled .btn {
 
 .dropdown,
 .dropend,
-.dropStarting,
+.dropstart,
 .dropup {
     position: relative
 }
@@ -4272,11 +4272,11 @@ fieldset:disabled .btn {
     margin-top: .125rem
 }
 
-.dropdown-menu-Starting {
-    --bs-position: Starting
+.dropdown-menu-start {
+    --bs-position: start
 }
 
-.dropdown-menu-Starting[data-bs-popper] {
+.dropdown-menu-start[data-bs-popper] {
     right: auto;
     left: 0
 }
@@ -4291,10 +4291,10 @@ fieldset:disabled .btn {
 }
 
 @media(min-width:576px) {
-    .dropdown-menu-sm-Starting {
-        --bs-position: Starting
+    .dropdown-menu-sm-start {
+        --bs-position: start
     }
-    .dropdown-menu-sm-Starting[data-bs-popper] {
+    .dropdown-menu-sm-start[data-bs-popper] {
         right: auto;
         left: 0
     }
@@ -4308,10 +4308,10 @@ fieldset:disabled .btn {
 }
 
 @media(min-width:768px) {
-    .dropdown-menu-md-Starting {
-        --bs-position: Starting
+    .dropdown-menu-md-start {
+        --bs-position: start
     }
-    .dropdown-menu-md-Starting[data-bs-popper] {
+    .dropdown-menu-md-start[data-bs-popper] {
         right: auto;
         left: 0
     }
@@ -4325,10 +4325,10 @@ fieldset:disabled .btn {
 }
 
 @media(min-width:992px) {
-    .dropdown-menu-lg-Starting {
-        --bs-position: Starting
+    .dropdown-menu-lg-start {
+        --bs-position: start
     }
-    .dropdown-menu-lg-Starting[data-bs-popper] {
+    .dropdown-menu-lg-start[data-bs-popper] {
         right: auto;
         left: 0
     }
@@ -4342,10 +4342,10 @@ fieldset:disabled .btn {
 }
 
 @media(min-width:1200px) {
-    .dropdown-menu-xl-Starting {
-        --bs-position: Starting
+    .dropdown-menu-xl-start {
+        --bs-position: start
     }
-    .dropdown-menu-xl-Starting[data-bs-popper] {
+    .dropdown-menu-xl-start[data-bs-popper] {
         right: auto;
         left: 0
     }
@@ -4359,10 +4359,10 @@ fieldset:disabled .btn {
 }
 
 @media(min-width:1400px) {
-    .dropdown-menu-xxl-Starting {
-        --bs-position: Starting
+    .dropdown-menu-xxl-start {
+        --bs-position: start
     }
-    .dropdown-menu-xxl-Starting[data-bs-popper] {
+    .dropdown-menu-xxl-start[data-bs-popper] {
         right: auto;
         left: 0
     }
@@ -4424,7 +4424,7 @@ fieldset:disabled .btn {
     vertical-align: 0
 }
 
-.dropStarting .dropdown-menu[data-bs-popper] {
+.dropstart .dropdown-menu[data-bs-popper] {
     top: 0;
     right: 100%;
     left: auto;
@@ -4432,18 +4432,18 @@ fieldset:disabled .btn {
     margin-right: .125rem
 }
 
-.dropStarting .dropdown-toggle::after {
+.dropstart .dropdown-toggle::after {
     display: inline-block;
     margin-left: .255em;
     vertical-align: .255em;
     content: ""
 }
 
-.dropStarting .dropdown-toggle::after {
+.dropstart .dropdown-toggle::after {
     display: none
 }
 
-.dropStarting .dropdown-toggle::before {
+.dropstart .dropdown-toggle::before {
     display: inline-block;
     margin-right: .255em;
     vertical-align: .255em;
@@ -4453,11 +4453,11 @@ fieldset:disabled .btn {
     border-bottom: .3em solid transparent
 }
 
-.dropStarting .dropdown-toggle:empty::after {
+.dropstart .dropdown-toggle:empty::after {
     margin-left: 0
 }
 
-.dropStarting .dropdown-toggle::before {
+.dropstart .dropdown-toggle::before {
     vertical-align: 0
 }
 
@@ -4602,10 +4602,10 @@ fieldset:disabled .btn {
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    -webkit-box-pack: Starting;
-    -webkit-justify-content: flex-Starting;
-    -ms-flex-pack: Starting;
-    justify-content: flex-Starting
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start
 }
 
 .btn-toolbar .input-group {
@@ -4641,7 +4641,7 @@ fieldset:disabled .btn {
     margin-left: 0
 }
 
-.dropStarting .dropdown-toggle-split::before {
+.dropstart .dropdown-toggle-split::before {
     margin-right: 0
 }
 
@@ -4663,10 +4663,10 @@ fieldset:disabled .btn {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-align: Starting;
-    -webkit-align-items: flex-Starting;
-    -ms-flex-align: Starting;
-    align-items: flex-Starting;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
@@ -4971,10 +4971,10 @@ fieldset:disabled .btn {
         -webkit-flex-wrap: nowrap;
         -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-        -webkit-box-pack: Starting;
-        -webkit-justify-content: flex-Starting;
-        -ms-flex-pack: Starting;
-        justify-content: flex-Starting
+        -webkit-box-pack: start;
+        -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+        justify-content: flex-start
     }
     .navbar-expand-sm .navbar-nav {
         -webkit-box-orient: horizontal;
@@ -5012,10 +5012,10 @@ fieldset:disabled .btn {
         -webkit-flex-wrap: nowrap;
         -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-        -webkit-box-pack: Starting;
-        -webkit-justify-content: flex-Starting;
-        -ms-flex-pack: Starting;
-        justify-content: flex-Starting
+        -webkit-box-pack: start;
+        -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+        justify-content: flex-start
     }
     .navbar-expand-md .navbar-nav {
         -webkit-box-orient: horizontal;
@@ -5053,10 +5053,10 @@ fieldset:disabled .btn {
         -webkit-flex-wrap: nowrap;
         -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-        -webkit-box-pack: Starting;
-        -webkit-justify-content: flex-Starting;
-        -ms-flex-pack: Starting;
-        justify-content: flex-Starting
+        -webkit-box-pack: start;
+        -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+        justify-content: flex-start
     }
     .navbar-expand-lg .navbar-nav {
         -webkit-box-orient: horizontal;
@@ -5094,10 +5094,10 @@ fieldset:disabled .btn {
         -webkit-flex-wrap: nowrap;
         -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-        -webkit-box-pack: Starting;
-        -webkit-justify-content: flex-Starting;
-        -ms-flex-pack: Starting;
-        justify-content: flex-Starting
+        -webkit-box-pack: start;
+        -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+        justify-content: flex-start
     }
     .navbar-expand-xl .navbar-nav {
         -webkit-box-orient: horizontal;
@@ -5135,10 +5135,10 @@ fieldset:disabled .btn {
         -webkit-flex-wrap: nowrap;
         -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-        -webkit-box-pack: Starting;
-        -webkit-justify-content: flex-Starting;
-        -ms-flex-pack: Starting;
-        justify-content: flex-Starting
+        -webkit-box-pack: start;
+        -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+        justify-content: flex-start
     }
     .navbar-expand-xxl .navbar-nav {
         -webkit-box-orient: horizontal;
@@ -5175,10 +5175,10 @@ fieldset:disabled .btn {
     -webkit-flex-wrap: nowrap;
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
-    -webkit-box-pack: Starting;
-    -webkit-justify-content: flex-Starting;
-    -ms-flex-pack: Starting;
-    justify-content: flex-Starting
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start
 }
 
 .navbar-expand .navbar-nav {
@@ -6868,7 +6868,7 @@ fieldset:disabled .btn {
     font-weight: 400;
     line-height: 1.5;
     text-align: left;
-    text-align: Starting;
+    text-align: start;
     text-decoration: none;
     text-shadow: none;
     text-transform: none;
@@ -6954,19 +6954,19 @@ fieldset:disabled .btn {
 }
 
 .bs-tooltip-auto[data-popper-placement^=left],
-.bs-tooltip-Starting {
+.bs-tooltip-start {
     padding: 0 .4rem
 }
 
 .bs-tooltip-auto[data-popper-placement^=left] .tooltip-arrow,
-.bs-tooltip-Starting .tooltip-arrow {
+.bs-tooltip-start .tooltip-arrow {
     right: 0;
     width: .4rem;
     height: .8rem
 }
 
 .bs-tooltip-auto[data-popper-placement^=left] .tooltip-arrow::before,
-.bs-tooltip-Starting .tooltip-arrow::before {
+.bs-tooltip-start .tooltip-arrow::before {
     left: -1px;
     border-width: .4rem 0 .4rem .4rem;
     border-left-color: #000
@@ -6993,7 +6993,7 @@ fieldset:disabled .btn {
     font-weight: 400;
     line-height: 1.5;
     text-align: left;
-    text-align: Starting;
+    text-align: start;
     text-decoration: none;
     text-shadow: none;
     text-transform: none;
@@ -7098,21 +7098,21 @@ fieldset:disabled .btn {
 }
 
 .bs-popover-auto[data-popper-placement^=left]>.popover-arrow,
-.bs-popover-Starting>.popover-arrow {
+.bs-popover-start>.popover-arrow {
     right: calc(-.5rem - 1px);
     width: .5rem;
     height: 1rem
 }
 
 .bs-popover-auto[data-popper-placement^=left]>.popover-arrow::before,
-.bs-popover-Starting>.popover-arrow::before {
+.bs-popover-start>.popover-arrow::before {
     right: 0;
     border-width: .5rem 0 .5rem .5rem;
     border-left-color: rgba(0, 0, 0, .25)
 }
 
 .bs-popover-auto[data-popper-placement^=left]>.popover-arrow::after,
-.bs-popover-Starting>.popover-arrow::after {
+.bs-popover-start>.popover-arrow::after {
     right: 1px;
     border-width: .5rem 0 .5rem .5rem;
     border-left-color: #fff
@@ -7189,13 +7189,13 @@ fieldset:disabled .btn {
 }
 
 .active.carousel-item-end,
-.carousel-item-next:not(.carousel-item-Starting) {
+.carousel-item-next:not(.carousel-item-start) {
     -webkit-transform: translateX(100%);
     -ms-transform: translateX(100%);
     transform: translateX(100%)
 }
 
-.active.carousel-item-Starting,
+.active.carousel-item-start,
 .carousel-item-prev:not(.carousel-item-end) {
     -webkit-transform: translateX(-100%);
     -ms-transform: translateX(-100%);
@@ -7212,7 +7212,7 @@ fieldset:disabled .btn {
     transform: none
 }
 
-.carousel-fade .carousel-item-next.carousel-item-Starting,
+.carousel-fade .carousel-item-next.carousel-item-start,
 .carousel-fade .carousel-item-prev.carousel-item-end,
 .carousel-fade .carousel-item.active {
     z-index: 1;
@@ -7220,7 +7220,7 @@ fieldset:disabled .btn {
 }
 
 .carousel-fade .active.carousel-item-end,
-.carousel-fade .active.carousel-item-Starting {
+.carousel-fade .active.carousel-item-start {
     z-index: 0;
     opacity: 0;
     -webkit-transition: opacity 0s .6s;
@@ -7230,7 +7230,7 @@ fieldset:disabled .btn {
 
 @media(prefers-reduced-motion:reduce) {
     .carousel-fade .active.carousel-item-end,
-    .carousel-fade .active.carousel-item-Starting {
+    .carousel-fade .active.carousel-item-start {
         -webkit-transition: none;
         -o-transition: none;
         transition: none
@@ -7547,7 +7547,7 @@ fieldset:disabled .btn {
     overflow-y: auto
 }
 
-.offcanvas-Starting {
+.offcanvas-start {
     top: 0;
     left: 0;
     width: 400px;
@@ -7831,7 +7831,7 @@ fieldset:disabled .btn {
     vertical-align: text-top !important
 }
 
-.float-Starting {
+.float-start {
     float: left !important
 }
 
@@ -7970,15 +7970,15 @@ fieldset:disabled .btn {
     bottom: 100% !important
 }
 
-.Starting-0 {
+.start-0 {
     left: 0 !important
 }
 
-.Starting-50 {
+.start-50 {
     left: 50% !important
 }
 
-.Starting-100 {
+.start-100 {
     left: 100% !important
 }
 
@@ -8044,11 +8044,11 @@ fieldset:disabled .btn {
     border-bottom: 0 !important
 }
 
-.border-Starting {
+.border-start {
     border-left: 1px solid #dee2e6 !important
 }
 
-.border-Starting-0 {
+.border-start-0 {
     border-left: 0 !important
 }
 
@@ -8279,11 +8279,11 @@ fieldset:disabled .btn {
     gap: 3rem !important
 }
 
-.justify-content-Starting {
-    -webkit-box-pack: Starting !important;
-    -webkit-justify-content: flex-Starting !important;
-    -ms-flex-pack: Starting !important;
-    justify-content: flex-Starting !important
+.justify-content-start {
+    -webkit-box-pack: start !important;
+    -webkit-justify-content: flex-start !important;
+    -ms-flex-pack: start !important;
+    justify-content: flex-start !important
 }
 
 .justify-content-end {
@@ -8320,11 +8320,11 @@ fieldset:disabled .btn {
     justify-content: space-evenly !important
 }
 
-.align-items-Starting {
-    -webkit-box-align: Starting !important;
-    -webkit-align-items: flex-Starting !important;
-    -ms-flex-align: Starting !important;
-    align-items: flex-Starting !important
+.align-items-start {
+    -webkit-box-align: start !important;
+    -webkit-align-items: flex-start !important;
+    -ms-flex-align: start !important;
+    align-items: flex-start !important
 }
 
 .align-items-end {
@@ -8355,10 +8355,10 @@ fieldset:disabled .btn {
     align-items: stretch !important
 }
 
-.align-content-Starting {
-    -webkit-align-content: flex-Starting !important;
-    -ms-flex-line-pack: Starting !important;
-    align-content: flex-Starting !important
+.align-content-start {
+    -webkit-align-content: flex-start !important;
+    -ms-flex-line-pack: start !important;
+    align-content: flex-start !important
 }
 
 .align-content-end {
@@ -8397,10 +8397,10 @@ fieldset:disabled .btn {
     align-self: auto !important
 }
 
-.align-self-Starting {
-    -webkit-align-self: flex-Starting !important;
-    -ms-flex-item-align: Starting !important;
-    align-self: flex-Starting !important
+.align-self-start {
+    -webkit-align-self: flex-start !important;
+    -ms-flex-item-align: start !important;
+    align-self: flex-start !important
 }
 
 .align-self-end {
@@ -8945,7 +8945,7 @@ fieldset:disabled .btn {
     line-height: 2 !important
 }
 
-.text-Starting {
+.text-start {
     text-align: left !important
 }
 
@@ -9170,7 +9170,7 @@ fieldset:disabled .btn {
     border-bottom-left-radius: .25rem !important
 }
 
-.rounded-Starting {
+.rounded-start {
     border-bottom-left-radius: .25rem !important;
     border-top-left-radius: .25rem !important
 }
@@ -9184,7 +9184,7 @@ fieldset:disabled .btn {
 }
 
 @media(min-width:576px) {
-    .float-sm-Starting {
+    .float-sm-start {
         float: left !important
     }
     .float-sm-end {
@@ -9318,11 +9318,11 @@ fieldset:disabled .btn {
     .gap-sm-5 {
         gap: 3rem !important
     }
-    .justify-content-sm-Starting {
-        -webkit-box-pack: Starting !important;
-        -webkit-justify-content: flex-Starting !important;
-        -ms-flex-pack: Starting !important;
-        justify-content: flex-Starting !important
+    .justify-content-sm-start {
+        -webkit-box-pack: start !important;
+        -webkit-justify-content: flex-start !important;
+        -ms-flex-pack: start !important;
+        justify-content: flex-start !important
     }
     .justify-content-sm-end {
         -webkit-box-pack: end !important;
@@ -9353,11 +9353,11 @@ fieldset:disabled .btn {
         -ms-flex-pack: space-evenly !important;
         justify-content: space-evenly !important
     }
-    .align-items-sm-Starting {
-        -webkit-box-align: Starting !important;
-        -webkit-align-items: flex-Starting !important;
-        -ms-flex-align: Starting !important;
-        align-items: flex-Starting !important
+    .align-items-sm-start {
+        -webkit-box-align: start !important;
+        -webkit-align-items: flex-start !important;
+        -ms-flex-align: start !important;
+        align-items: flex-start !important
     }
     .align-items-sm-end {
         -webkit-box-align: end !important;
@@ -9383,10 +9383,10 @@ fieldset:disabled .btn {
         -ms-flex-align: stretch !important;
         align-items: stretch !important
     }
-    .align-content-sm-Starting {
-        -webkit-align-content: flex-Starting !important;
-        -ms-flex-line-pack: Starting !important;
-        align-content: flex-Starting !important
+    .align-content-sm-start {
+        -webkit-align-content: flex-start !important;
+        -ms-flex-line-pack: start !important;
+        align-content: flex-start !important
     }
     .align-content-sm-end {
         -webkit-align-content: flex-end !important;
@@ -9418,10 +9418,10 @@ fieldset:disabled .btn {
         -ms-flex-item-align: auto !important;
         align-self: auto !important
     }
-    .align-self-sm-Starting {
-        -webkit-align-self: flex-Starting !important;
-        -ms-flex-item-align: Starting !important;
-        align-self: flex-Starting !important
+    .align-self-sm-start {
+        -webkit-align-self: flex-start !important;
+        -ms-flex-item-align: start !important;
+        align-self: flex-start !important
     }
     .align-self-sm-end {
         -webkit-align-self: flex-end !important;
@@ -9790,7 +9790,7 @@ fieldset:disabled .btn {
     .ps-sm-5 {
         padding-left: 3rem !important
     }
-    .text-sm-Starting {
+    .text-sm-start {
         text-align: left !important
     }
     .text-sm-end {
@@ -9802,7 +9802,7 @@ fieldset:disabled .btn {
 }
 
 @media(min-width:768px) {
-    .float-md-Starting {
+    .float-md-start {
         float: left !important
     }
     .float-md-end {
@@ -9936,11 +9936,11 @@ fieldset:disabled .btn {
     .gap-md-5 {
         gap: 3rem !important
     }
-    .justify-content-md-Starting {
-        -webkit-box-pack: Starting !important;
-        -webkit-justify-content: flex-Starting !important;
-        -ms-flex-pack: Starting !important;
-        justify-content: flex-Starting !important
+    .justify-content-md-start {
+        -webkit-box-pack: start !important;
+        -webkit-justify-content: flex-start !important;
+        -ms-flex-pack: start !important;
+        justify-content: flex-start !important
     }
     .justify-content-md-end {
         -webkit-box-pack: end !important;
@@ -9971,11 +9971,11 @@ fieldset:disabled .btn {
         -ms-flex-pack: space-evenly !important;
         justify-content: space-evenly !important
     }
-    .align-items-md-Starting {
-        -webkit-box-align: Starting !important;
-        -webkit-align-items: flex-Starting !important;
-        -ms-flex-align: Starting !important;
-        align-items: flex-Starting !important
+    .align-items-md-start {
+        -webkit-box-align: start !important;
+        -webkit-align-items: flex-start !important;
+        -ms-flex-align: start !important;
+        align-items: flex-start !important
     }
     .align-items-md-end {
         -webkit-box-align: end !important;
@@ -10001,10 +10001,10 @@ fieldset:disabled .btn {
         -ms-flex-align: stretch !important;
         align-items: stretch !important
     }
-    .align-content-md-Starting {
-        -webkit-align-content: flex-Starting !important;
-        -ms-flex-line-pack: Starting !important;
-        align-content: flex-Starting !important
+    .align-content-md-start {
+        -webkit-align-content: flex-start !important;
+        -ms-flex-line-pack: start !important;
+        align-content: flex-start !important
     }
     .align-content-md-end {
         -webkit-align-content: flex-end !important;
@@ -10036,10 +10036,10 @@ fieldset:disabled .btn {
         -ms-flex-item-align: auto !important;
         align-self: auto !important
     }
-    .align-self-md-Starting {
-        -webkit-align-self: flex-Starting !important;
-        -ms-flex-item-align: Starting !important;
-        align-self: flex-Starting !important
+    .align-self-md-start {
+        -webkit-align-self: flex-start !important;
+        -ms-flex-item-align: start !important;
+        align-self: flex-start !important
     }
     .align-self-md-end {
         -webkit-align-self: flex-end !important;
@@ -10408,7 +10408,7 @@ fieldset:disabled .btn {
     .ps-md-5 {
         padding-left: 3rem !important
     }
-    .text-md-Starting {
+    .text-md-start {
         text-align: left !important
     }
     .text-md-end {
@@ -10420,7 +10420,7 @@ fieldset:disabled .btn {
 }
 
 @media(min-width:992px) {
-    .float-lg-Starting {
+    .float-lg-start {
         float: left !important
     }
     .float-lg-end {
@@ -10554,11 +10554,11 @@ fieldset:disabled .btn {
     .gap-lg-5 {
         gap: 3rem !important
     }
-    .justify-content-lg-Starting {
-        -webkit-box-pack: Starting !important;
-        -webkit-justify-content: flex-Starting !important;
-        -ms-flex-pack: Starting !important;
-        justify-content: flex-Starting !important
+    .justify-content-lg-start {
+        -webkit-box-pack: start !important;
+        -webkit-justify-content: flex-start !important;
+        -ms-flex-pack: start !important;
+        justify-content: flex-start !important
     }
     .justify-content-lg-end {
         -webkit-box-pack: end !important;
@@ -10589,11 +10589,11 @@ fieldset:disabled .btn {
         -ms-flex-pack: space-evenly !important;
         justify-content: space-evenly !important
     }
-    .align-items-lg-Starting {
-        -webkit-box-align: Starting !important;
-        -webkit-align-items: flex-Starting !important;
-        -ms-flex-align: Starting !important;
-        align-items: flex-Starting !important
+    .align-items-lg-start {
+        -webkit-box-align: start !important;
+        -webkit-align-items: flex-start !important;
+        -ms-flex-align: start !important;
+        align-items: flex-start !important
     }
     .align-items-lg-end {
         -webkit-box-align: end !important;
@@ -10619,10 +10619,10 @@ fieldset:disabled .btn {
         -ms-flex-align: stretch !important;
         align-items: stretch !important
     }
-    .align-content-lg-Starting {
-        -webkit-align-content: flex-Starting !important;
-        -ms-flex-line-pack: Starting !important;
-        align-content: flex-Starting !important
+    .align-content-lg-start {
+        -webkit-align-content: flex-start !important;
+        -ms-flex-line-pack: start !important;
+        align-content: flex-start !important
     }
     .align-content-lg-end {
         -webkit-align-content: flex-end !important;
@@ -10654,10 +10654,10 @@ fieldset:disabled .btn {
         -ms-flex-item-align: auto !important;
         align-self: auto !important
     }
-    .align-self-lg-Starting {
-        -webkit-align-self: flex-Starting !important;
-        -ms-flex-item-align: Starting !important;
-        align-self: flex-Starting !important
+    .align-self-lg-start {
+        -webkit-align-self: flex-start !important;
+        -ms-flex-item-align: start !important;
+        align-self: flex-start !important
     }
     .align-self-lg-end {
         -webkit-align-self: flex-end !important;
@@ -11026,7 +11026,7 @@ fieldset:disabled .btn {
     .ps-lg-5 {
         padding-left: 3rem !important
     }
-    .text-lg-Starting {
+    .text-lg-start {
         text-align: left !important
     }
     .text-lg-end {
@@ -11038,7 +11038,7 @@ fieldset:disabled .btn {
 }
 
 @media(min-width:1200px) {
-    .float-xl-Starting {
+    .float-xl-start {
         float: left !important
     }
     .float-xl-end {
@@ -11172,11 +11172,11 @@ fieldset:disabled .btn {
     .gap-xl-5 {
         gap: 3rem !important
     }
-    .justify-content-xl-Starting {
-        -webkit-box-pack: Starting !important;
-        -webkit-justify-content: flex-Starting !important;
-        -ms-flex-pack: Starting !important;
-        justify-content: flex-Starting !important
+    .justify-content-xl-start {
+        -webkit-box-pack: start !important;
+        -webkit-justify-content: flex-start !important;
+        -ms-flex-pack: start !important;
+        justify-content: flex-start !important
     }
     .justify-content-xl-end {
         -webkit-box-pack: end !important;
@@ -11207,11 +11207,11 @@ fieldset:disabled .btn {
         -ms-flex-pack: space-evenly !important;
         justify-content: space-evenly !important
     }
-    .align-items-xl-Starting {
-        -webkit-box-align: Starting !important;
-        -webkit-align-items: flex-Starting !important;
-        -ms-flex-align: Starting !important;
-        align-items: flex-Starting !important
+    .align-items-xl-start {
+        -webkit-box-align: start !important;
+        -webkit-align-items: flex-start !important;
+        -ms-flex-align: start !important;
+        align-items: flex-start !important
     }
     .align-items-xl-end {
         -webkit-box-align: end !important;
@@ -11237,10 +11237,10 @@ fieldset:disabled .btn {
         -ms-flex-align: stretch !important;
         align-items: stretch !important
     }
-    .align-content-xl-Starting {
-        -webkit-align-content: flex-Starting !important;
-        -ms-flex-line-pack: Starting !important;
-        align-content: flex-Starting !important
+    .align-content-xl-start {
+        -webkit-align-content: flex-start !important;
+        -ms-flex-line-pack: start !important;
+        align-content: flex-start !important
     }
     .align-content-xl-end {
         -webkit-align-content: flex-end !important;
@@ -11272,10 +11272,10 @@ fieldset:disabled .btn {
         -ms-flex-item-align: auto !important;
         align-self: auto !important
     }
-    .align-self-xl-Starting {
-        -webkit-align-self: flex-Starting !important;
-        -ms-flex-item-align: Starting !important;
-        align-self: flex-Starting !important
+    .align-self-xl-start {
+        -webkit-align-self: flex-start !important;
+        -ms-flex-item-align: start !important;
+        align-self: flex-start !important
     }
     .align-self-xl-end {
         -webkit-align-self: flex-end !important;
@@ -11644,7 +11644,7 @@ fieldset:disabled .btn {
     .ps-xl-5 {
         padding-left: 3rem !important
     }
-    .text-xl-Starting {
+    .text-xl-start {
         text-align: left !important
     }
     .text-xl-end {
@@ -11656,7 +11656,7 @@ fieldset:disabled .btn {
 }
 
 @media(min-width:1400px) {
-    .float-xxl-Starting {
+    .float-xxl-start {
         float: left !important
     }
     .float-xxl-end {
@@ -11790,11 +11790,11 @@ fieldset:disabled .btn {
     .gap-xxl-5 {
         gap: 3rem !important
     }
-    .justify-content-xxl-Starting {
-        -webkit-box-pack: Starting !important;
-        -webkit-justify-content: flex-Starting !important;
-        -ms-flex-pack: Starting !important;
-        justify-content: flex-Starting !important
+    .justify-content-xxl-start {
+        -webkit-box-pack: start !important;
+        -webkit-justify-content: flex-start !important;
+        -ms-flex-pack: start !important;
+        justify-content: flex-start !important
     }
     .justify-content-xxl-end {
         -webkit-box-pack: end !important;
@@ -11825,11 +11825,11 @@ fieldset:disabled .btn {
         -ms-flex-pack: space-evenly !important;
         justify-content: space-evenly !important
     }
-    .align-items-xxl-Starting {
-        -webkit-box-align: Starting !important;
-        -webkit-align-items: flex-Starting !important;
-        -ms-flex-align: Starting !important;
-        align-items: flex-Starting !important
+    .align-items-xxl-start {
+        -webkit-box-align: start !important;
+        -webkit-align-items: flex-start !important;
+        -ms-flex-align: start !important;
+        align-items: flex-start !important
     }
     .align-items-xxl-end {
         -webkit-box-align: end !important;
@@ -11855,10 +11855,10 @@ fieldset:disabled .btn {
         -ms-flex-align: stretch !important;
         align-items: stretch !important
     }
-    .align-content-xxl-Starting {
-        -webkit-align-content: flex-Starting !important;
-        -ms-flex-line-pack: Starting !important;
-        align-content: flex-Starting !important
+    .align-content-xxl-start {
+        -webkit-align-content: flex-start !important;
+        -ms-flex-line-pack: start !important;
+        align-content: flex-start !important
     }
     .align-content-xxl-end {
         -webkit-align-content: flex-end !important;
@@ -11890,10 +11890,10 @@ fieldset:disabled .btn {
         -ms-flex-item-align: auto !important;
         align-self: auto !important
     }
-    .align-self-xxl-Starting {
-        -webkit-align-self: flex-Starting !important;
-        -ms-flex-item-align: Starting !important;
-        align-self: flex-Starting !important
+    .align-self-xxl-start {
+        -webkit-align-self: flex-start !important;
+        -ms-flex-item-align: start !important;
+        align-self: flex-start !important
     }
     .align-self-xxl-end {
         -webkit-align-self: flex-end !important;
@@ -12262,7 +12262,7 @@ fieldset:disabled .btn {
     .ps-xxl-5 {
         padding-left: 3rem !important
     }
-    .text-xxl-Starting {
+    .text-xxl-start {
         text-align: left !important
     }
     .text-xxl-end {
