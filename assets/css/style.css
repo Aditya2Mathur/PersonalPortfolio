@@ -12783,7 +12783,7 @@ figcaption {
     transform: translateX(-50%);
     background: var(--background-color-1);
     box-shadow: var(--shadow-1);
-    border-radius: 6px;
+    border-radius: 50px;
 }
 
 .slide .thumbnail .inner {
